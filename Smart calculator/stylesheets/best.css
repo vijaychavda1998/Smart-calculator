@@ -1,0 +1,133 @@
+/* Overall styles */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f3f3f3;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#calculator {
+    width: 800px;
+    /* Adjusted width to match the reference image */
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #1c1c1c;
+    /* Dark background color */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Slight shadow effect */
+}
+
+
+/* Calculator display */
+
+#display {
+    width: calc(100% - 20px);
+    height: 80px;
+    /* Reduced height to match the reference image */
+    background-color: #333;
+    font-size: 36px;
+    color: #fff;
+    text-align: right;
+    padding: 20px 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+
+/* Calculator buttons */
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 10px;
+    /* Added spacing between buttons */
+}
+
+tr {
+    text-align: center;
+}
+
+
+/* Function buttons (green) */
+
+.button.f {
+    background-color: #4CAF50;
+    color: #fff;
+    border-radius: 10px;
+    transition: background-color 0.2s ease-in-out;
+    height: 60px;
+    /* Keep the button height */
+    padding: 10px 20px;
+    /* Adjust padding for a boxier appearance */
+    font-size: 24px;
+}
+
+.button.f:hover {
+    background-color: #45a049;
+}
+
+
+/* Operator buttons (orange) */
+
+.button.p {
+    background-color: #FF9800;
+    color: #fff;
+    border-radius: 10px;
+    transition: background-color 0.2s ease-in-out;
+    font-size: 24px;
+    height: 63px;
+    /* Keep the button height */
+    padding: 10px 20px;
+    /* Adjust padding for a boxier appearance */
+}
+
+.button.p:hover {
+    background-color: #e68a00;
+}
+
+
+/* Value buttons (blue) */
+
+.button.v {
+    background-color: #2196F3;
+    color: #fff;
+    border-radius: 10px;
+    transition: background-color 0.2s ease-in-out;
+    height: 150px;
+    /* Keep the button height */
+    padding: 10px 20px;
+    /* Adjust padding for a boxier appearance */
+    font-size: 24px;
+}
+
+.button.v:hover {
+    background-color: #1e87dd;
+}
+
+
+/* Other buttons (gray) */
+
+.button.h {
+    background-color: #4d4d4d;
+    color: #fff;
+    border-radius: 10px;
+    transition: background-color 0.2s ease-in-out;
+    height: 60px;
+    /* Keep the button height */
+    padding: 10px 20px;
+    /* Adjust padding for a boxier appearance */
+    font-size: 24px;
+    width: 90;
+}
+
+.button.h:hover {
+    background-color: #424242;
+}

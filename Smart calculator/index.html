@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SMART CALCULATOR</title>
+    <link rel="stylesheet" type="text/css" href="stylesheets/mystyle.css" />
+    <style>
+        /* Add your CSS styles here */
+    </style>
+</head>
+
+<body>
+    <h1>SMART CALCULATOR</h1>
+    <div id="mainDisplay">
+        <div id="calculatorDisplay">
+            <input type="text" id="display" disabled aria-label="Calculator Display" /><br />
+            <!-- Calculator buttons and functionality here -->
+        </div>
+        <div id="customerDisplay" style="display: none;">
+            <!-- Customer display and input fields here -->
+            <div id="customerData">
+                <label for="mobile">Mobile Number:</label>
+                <input type="text" id="mobile" placeholder="Mobile number" />
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Name" />
+                <label for="remarks">Remarks:</label>
+                <input type="text" id="remarks" placeholder="Remarks" />
+            </div>
+            <button onclick="saveCustomerData()">Save</button>
+        </div>
+    </div>
+
+    <table>
+        <tr>
+            <td><button class="button f" onclick="toggleDisplay('calculator')">Start</button></td>
+            <td>
+                <button class="button f" onclick="previousTransaction()">
+                Previous
+              </button>
+            </td>
+            <td>
+                <button class="button f" onclick="nextTransaction()">Next</button>
+            </td>
+        </tr>
+    </table>
+    <br />
+
+    <!-- Input fields for customer data -->
+    <div id="customerData" style="display: none">
+        <label for="mobile">Mobile Number:</label>
+        <input type="text" id="mobile" placeholder="Mobile number" />
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Name" />
+        <label for="remarks">Remarks:</label>
+        <input type="text" id="remarks" placeholder="Remarks" />
+    </div>
+
+    <table>
+        <tr>
+            <td>
+                <button class="button f" onclick="addTax()">Add Tax</button>
+            </td>
+            <td>
+                <button class="button f" onclick="subtractTax()">
+                Subtract Tax
+              </button>
+            </td>
+            <td><button class="button f" onclick="grandTotal()">GT</button></td>
+            <td><button class="button f" onclick="markUp()">MU</button></td>
+            <td><button class="button f" onclick="shift()">Shift</button></td>
+            <td>
+                <button class="button f" onclick="correct()">Correct</button>
+            </td>
+            <td><button class="button f" onclick="mrc()">MRC</button></td>
+        </tr>
+    </table>
+    <br />
+
+    <table>
+        <tr>
+            <td><button class="button p" onclick="menu()">MENU</button></td>
+            <td>
+                <button class="button p" onclick="appendInput('7')">
+                <div class="number">7</div>
+                <div class="letters">STU</div>
+              </button>
+            </td>
+            <td>
+                <button class="button p" onclick="appendInput('8')">
+                <div class="number">8</div>
+                <div class="letters">VWX</div>
+              </button>
+            </td>
+            <td>
+                <button class="button p" onclick="appendInput('9')">
+                <div class="number">9</div>
+                <div class="letters">YZ</div>
+              </button>
+            </td>
+            <td>
+                <button class="button p" onclick="appendInput('/')">/</button>
+            </td>
+            <td>
+                <button class="button p" onclick="appendInput('%')">%</button>
+            </td>
+            <td><button class="button f" onclick="memoryPlus()">M+</button></td>
+            <td>
+                <button class="button f" onclick="independentMemory()">M-</button>
+            </td>
+        </tr>
+    </table>
+    <br />
+
+    <table>
+        <tr>
+            <td><button class="button p" onclick="allClear()">AC</button></td>
+            <td>
+                <button class="button p" onclick="appendInput('4')">
+                <div class="number">4</div>
+                <div class="letters">JKL</div>
+              </button>
+            </td>
+            <td>
+                <button class="button p" onclick="appendInput('5')">
+                <div class="number">5</div>
+                <div class="letters">MNO</div>
+              </button>
+            </td>
+            <td>
+                <button class="button p" onclick="appendInput('6')">
+                <div class="number">6</div>
+                <div class="letters">PQR</div>
+              </button>
+            </td>
+            <td>
+                <button class="button p" onclick="appendInput('*')">*</button>
+            </td>
+
+            <td>
+                <button class="button h" onclick="appendInput('-')">-</button>
+            </td>
+            <td>
+                <button class="button f" onclick="displayCustomerData(); toggleDisplay('customerDisplay') ">
+                &#128100;
+              </button>
+            </td>
+            <!-- <td><button id="toggleButton" onclick="toggleDisplay()">Switch to Customer Data Input</button></td> -->
+            <!-- Enclosed in a <td> tag -->
+            <td>
+                <button class="button f shift-btn" onclick="toggleMode()" data-mode="alphabet">
+                abc
+              </button>
+            </td>
+        </tr>
+    </table>
+    <br />
+
+    <table>
+        <tr>
+            <td><button class="button p" onclick="clearEntry()">CE</button></td>
+            <td>
+                <button class="button p" onclick="appendInput('1')">
+                <div class="number">1</div>
+                <div class="letters">ABC</div>
+              </button>
+            </td>
+            <td>
+                <button class="button p" onclick="appendInput('2')">
+                <div class="number">2</div>
+                <div class="letters">DEF</div>
+              </button>
+            </td>
+            <td>
+                <button class="button p" onclick="appendInput('3')">
+                <div class="number">3</div>
+                <div class="letters">GHI</div>
+              </button>
+            </td>
+
+            <td>
+                <button class="button v" onclick="appendInput('+')">+</button>
+            </td>
+            <td><button class="button h" onclick="sale()">Sales +</button></td>
+            <!-- Add more buttons as needed -->
+            <td></td>
+        </tr>
+    </table>
+    <br />
+
+    <table>
+        <tr>
+            <td>
+                <button class="button p" onclick="appendInput('0')">0</button>
+            </td>
+            <td>
+                <button class="button p" onclick="appendInput('00')">00</button>
+            </td>
+            <td><button class="button p" onclick="space()">Space</button></td>
+            <td>
+                <button class="button p" onclick="calculateResult()">=</button>
+            </td>
+            <td>
+                <button class="button h" onclick="expanse()">Expanse -</button>
+            </td>
+            <!-- Add more buttons as needed -->
+        </tr>
+    </table>
+    </div>
+    <div id="customerDisplay" style="display: none">
+        <!-- Customer display goes here -->
+    </div>
+    </div>
+    <script src="scripts/myscript.js"></script>
+    <!-- <script src="scripts/myscript_cal.js"></script> -->
+</body>
+
+</html>

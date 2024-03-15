@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>smart calculator</title>
+    <link rel="stylesheet" type="text/css" href="stylesheets/mystyle.css">
+</head>
+
+<body>
+    <h1>SMART CALCULATOR</h1>
+    <div id="calculator">
+        <input type="text" id="display" disabled><br>
+
+        <table>
+            <tr>
+                <button class="button f" onclick="powerOn()">start</button>
+                <button class="button f" onclick="previousTransaction()">&#8672;</button>
+                <button class="button f" onclick="nextTransaction()">&#8674;</button>
+            </tr>
+        </table><br>
+
+        <!-- Input fields for customer data -->
+        <div id="customerData" style="display: none;">
+            <input type="text" id="mobile" placeholder="Mobile number">
+            <input type="text" id="name" placeholder="Name">
+            <input type="text" id="remarks" placeholder="Remarks">
+        </div>
+
+        <table>
+            <tr>
+                <button class="button f" onclick="taxOne()">F1 Tax +</button>
+                <button class="button f" onclick="taxTwo()">F2 Tax -</button>
+                <button class="button f" onclick="grandTotal()">GT</button>
+                <button class="button f" onclick="markUp()">MU</button>
+                <button class="button f" onclick="shift()">Shift</button>
+                <button class="button f" onclick="correct()">Correct</button>
+                <button class="button f" onclick="mrc()">MRC</button>
+            </tr>
+        </table><br>
+
+        <table>
+            <tr>
+                <button class="button p" onclick="menu()">MENU</button>
+                <button class="button p" data-number="7" onclick="appendNumber('7')"><div class="number">7</div><div class="letters">STU</div></button>
+                <button class="button p" data-number="8" onclick="appendNumber('8')"><div class="number">8</div><div class="letters">VWX</div></button>
+                <button class="button p" data-number="9" onclick="appendNumber('9')"><div class="number">9</div><div class="letters">YZ</div></button>
+                <button class="button p" onclick="calculate('/')">/</button>
+                <button class="button p" onclick="calculatePercentage()">%</button>
+                <button class="button f" onclick="memoryPlus()">M+</button>
+                <button class="button f" onclick="independentMemory()">M-</button>
+            </tr>
+        </table><br>
+
+        <table>
+            <tr>
+                <button class="button p" onclick="allClear()">AC</button>
+                <button class="button p" data-number="4" onclick="appendNumber('4')"><div class="number">4</div><div class="letters">JKL</div></button>
+                <button class="button p" data-number="5" onclick="appendNumber('5')"><div class="number">5</div><div class="letters">MNO</div></button>
+                <button class="button p" data-number="6" onclick="appendNumber('6')"><div class="number">6</div><div class="letters">PQR</div></button>
+                <button class="button p" onclick="calculate('*')">*</button>
+                <button class="button p" onclick="calculate('-')">-</button>
+                <button class="button f" onclick="displayCustomerData()">&#128100;</button>
+                <button class="button f shift-btn" onclick="toggleMode()">abc</button>
+            </tr>
+        </table><br>
+
+        <table>
+            <tr>
+                <button class="button p" onclick="clearEntry()">CE</button>
+                <button class="button p" data-number="1" onclick="appendNumber('1')"><div class="number">1</div><div class="letters">ABC</div></button>
+                <button class="button p" data-number="2" onclick="appendNumber('2')"><div class="number">2</div><div class="letters">DEF</div></button>
+                <button class="button p" data-number="3" onclick="appendNumber('3')"><div class="number">3</div><div class="letters">GHI</div></button>
+                <button class="button v" onclick="calculate('+')">+</button>
+                <button class="button h" onclick="sale()">Sales +</button>
+            </tr>
+        </table><br>
+
+        <table>
+            <tr>
+                <button class="button p" onclick="appendNumber('0')">0</button>
+                <button class="button p" onclick="appendNumber('00')">00</button>
+                <button class="button p" onclick="space()">Spase</button>
+                <button class="button p" onclick="calculateResult()">=</button>
+                <button class="button h" onclick="expanse()">Expanse -</button>
+            </tr>
+        </table>
+    </div>
+    <script src="scripts/myscript.js"></script>
+</body>
+
+</html>

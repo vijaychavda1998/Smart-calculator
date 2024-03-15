@@ -1,0 +1,38 @@
+somthig is done and somthing is not done
+
+
+
+    i have html code and i want to modify svreen   at start it  work normal calculator but if i press person button so i want to display person's mobile number , name and any remaks 
+
+    ok it is working but i want when i am calculating something it will input number but if i press abc button so it will input alphabets  and abc button will change  into 123 button so if i press 123 button it will input number and 123 button will change to abc here is the code
+
+
+
+
+
+i want this website to work as many websites in one they are as follows 1st a normal calculator 2nd calculat tax with gst 3rd it take customer data like Mobile Number, Name, and any remarks and 4th how many cash come and go (sale and purchase) and and maintain ladger
+
+
+ok it is  50 batter and lets make it more batter in this js code special corrector  " / * - + % " can be type multipal time so some time it gives error
+
+
+
+there are two screen in this code 1st calculator 2nd is costomer's data if i type alphabet it is written in calculator's screen i want that  calculator's screen only take input of number and characters (/ * - %) but calculator's screen take both number and alphabet 
+
+
+i want this website to work as many websites in one they are as follows 1st a normal calculator 2nd calculat tax with gst 3rd it take customer data like Mobile Number, Name, and any remarks and 4th how many cash come and go (sale and purchase) and and maintain ladger, there are two screen in this code 1st calculator 2nd is costomer's data if i type alphabet it is written in calculator's screen i want that  calculator's screen only take input of number and characters (/ * - %) but calculator's screen take both number and alphabet , i can also take input from keybord
+
+
+
+i have to replace or update code give me js code if so give me full js code
+
+
+not working 1st  =>  css is not good  reference image "Version-4-Calculator-1 cut",  2 => shift button is also genrate qr code reference image "Payment" , 3 => display {1=> normal calculator  reference image "Calculate 1" , 2=> customer data  reference image "Record "}  make changes to the codes her are codes
+
+
+
+in this code there are  display {1=> normal calculator  reference image "Calculate 1" , 2=> customer data  reference image "Record "}  but it is not good as image and the display is divided in to two i want you merge displays and at the time only one display will be displayed
+
+
+
+in this code there are 2 display 1 calculator  and 2 customer i want you to create 3 display call main display and  2 display 1 calculator  and 2 customer will be part of this display and at the time only 1 display will be showing 

@@ -1,0 +1,1 @@
+i want this website to work as many websites in one they are as follows 1st a normal calculator 2nd calculat tax with gst 3rd it take customer data like Mobile Number, Name, and any remarks and 4th how many cash come and go (sale and purchase) and and maintain ladger
